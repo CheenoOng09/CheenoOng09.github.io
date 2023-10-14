@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#grad1 {
+  height: 200px;
+  background-image: linear-gradient(red, yellow, green);
+  font-family: arial;
+  font-size:50px;
+  text-shadow: white;
+  color:blue;
+	text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+            
+}
+</style>
+</head>
+<body>
+<h2 id="grad1">Border around text!</h2>
+
+</body>
+</html>
