@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* CSS Styles */
+        .grid-container{
+            display: grid;
+            min-height:100vh;
+            grid-template-rows: 25% 25% 50%;
+
+        }
+
+        .grid-item {
+            background-color: #3498db; /* A */
+            color: #fff; /* A */
+            text-align: center;
+            grid-column-gap: 5px;
+            grid-row-gap: 5px;
+            margin:5px;
+            border: solid 1px;
+            padding:5px;
+        }
+        .first-row{
+        	display:grid;
+            grid-template-rows:1fr;
+            grid-template-columns: 25% 1fr;
+            grid-column-gap: 5px;
+            grid-row-gap: 5px;            
+        }
+        
+        .second-row{
+        	display:grid;
+            grid-template-rows: 1fr;
+         	grid-gap: 10px;
+        }
+        .third-row{
+        	display:grid;
+            grid-template-columns: 25% 1fr;
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+        }
+        .menu {
+        	display:grid;
+            
+        }
+        .mainfooter{
+        	display:grid;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+    
+    	<div class="first-row">
+          <div class="grid-item">Logo</div>
+          <div class="grid-item">Navigation</div>         
+        </div>
+        
+        <div class="second-row">
+          <div class="grid-item">Banner</div>
+        </div>
+        
+        <div class="third-row">
+        
+        	<div class="menu">
+          		<div class="grid-item">Menu</div>
+            </div>
+            
+            <div class="mainfooter">
+          		<div class="grid-item">Main</div>
+          		<div class="grid-item">Footer</div> 
+			</div>
+
+        </div>
+        
+    </div>
+</body>
+</html>
