@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* CSS Styles */
+        .grid-container{
+            display: grid;
+            grid-gap: 5px; /* Gap between grid items */
+            min-height:100vh;
+            grid-template-rows: 1fr 1fr 25%;
+        }
+
+        .grid-item {
+            /*background-color: #3498db; /* A */
+            color: #fff; /* A */
+            padding: 20px;
+            text-align: center;
+            grid-column-gap: 5px;
+            grid-row-gap: 5px;
+            margin:5px;
+            border: solid 1px;
+        }
+        .first-row{
+        	background-color: green;
+        	display:grid;
+            grid-template-columns: 1fr;
+            grid-column-gap: 5px;
+            grid-row-gap: 5px;            
+        }
+        
+        .second-row{
+        	background-color: blue;
+        	display:grid;
+        	grid-template-columns: 1fr 1fr 1fr;
+         	grid-gap: 10px;
+            border: solid 10px;
+        }
+        .third-row{
+        	background-color:gray;
+        	display:grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-column-gap: 5px;
+            grid-row-gap: 5px;            
+        }
+        
+
+
+        /* Responsive layout: Switch to a single column on screens less than 480px wide */
+        @media (max-width: 480px) {
+            /*.grid-container {
+                grid-template-columns: 1fr; /* Single column on screens less than 480px wide 
+            }*/
+            
+            .grid-container{
+            	display:grid;
+                grid-gap:5px;
+                margin: 5px;
+            }
+            
+           	.second-row{
+        	display:grid;
+            grid-template-columns:1fr;
+        	grid-template-rows: 1fr 1fr 1fr;
+        	}
+            
+        	.third-row{
+        	display:grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        	}
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+    
+    	<div class="first-row">
+          <div class="grid-item">1</div>
+        </div>
+        
+        <div class="second-row">
+          <div class="grid-item">2</div>
+          <div class="grid-item">3</div>
+          <div class="grid-item">4</div>
+        </div>
+        
+        <div class="third-row">
+          <div class="grid-item">5</div>
+          <div class="grid-item">6</div>
+          <div class="grid-item">7</div> 
+          <div class="grid-item">8</div>
+        </div>
+        
+    </div>
+</body>
+</html>
