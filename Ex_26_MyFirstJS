@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #text {
+      color: black; /* Initial text color */
+      font-size: 20px;
+    }
+    #button{
+        font-size:20px;
+    }
+  </style>
+</head>
+<body>
+
+<button id="button" onmouseover="changeTextColor()" onclick="changeText()">Button</button>
+<p id="text">This is some text.</p>
+
+<script>
+  function changeTextColor() {
+    document.getElementById("text").style.color = "purple"; // Change text color on mouseover
+  }
+
+  function changeText() {
+    document.getElementById("text").innerHTML = "Mouse Click"; // Change text on button click
+  }
+</script>
+
+</body>
+</html>
